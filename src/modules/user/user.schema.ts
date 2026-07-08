@@ -3,11 +3,12 @@ export const userTypeDefs = `#graphql
     id: ID!
     name: String!
     email: String!
+    
   }
-
+ 
   type Query {
     users: [User!]!
-    user(id: ID!): User
+    user(id: ID!, name: String): User
   }
 
   type Mutation {
